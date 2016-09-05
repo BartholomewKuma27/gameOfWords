@@ -1,1 +1,1 @@
-*readme tak readme
+*part 1 of a design is ready
