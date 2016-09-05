@@ -1,0 +1,124 @@
+
+@media screen and (min-width: 710px) and (min-height: 470px) {
+	html, body {
+		height: 100%;
+	}
+
+	div{
+		border-radius: 1px;
+		border-style: solid;
+		vertical-align: top;
+	}
+
+	#mainPageDiv{
+		height: 100%;
+	}
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mainItem{
+		width: 40%;
+		height: 15%;
+		margin: 10px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#difficulty{
+		width: 50%;
+		margin: 0;
+	}
+
+	#offlineLink{
+		border: 2px solid black;
+		margin: 5px;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	a:visited, a:link, a:active {
+		color: black;
+	}
+	#gameDiv:target{
+		display: block;
+	}
+	#gameDiv{
+		height: 100%;
+	}
+	.playingDiv{
+		margin: 5px;
+		border: 1px solid black;
+		width: 20%;
+		height: 30%;
+	}
+
+	#first{
+		display:inline-block;
+		margin-left: 40%;
+		margin-right: 40%;
+	}
+
+	#second{
+		display:inline-block;
+		margin-left: 0;
+	}
+
+	#third{
+		display:inline-block;
+		width: 45%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#fourth{
+		display:inline-block;
+	}
+
+	#fifth{
+		display:inline-block;
+		margin-left: 40%;
+		margin-right: 0%;
+	}
+
+	#sixth{
+		display:inline-block;
+		width: 35%;
+	}
+	table{
+		width: 50%;
+		height: 80%;
+		margin: 5px auto 5px auto;
+		border-collapse: seperate;
+		border-spacing: 5px 0;
+	}
+	td{
+		border: 2px solid black;
+	}
+	
+	#third table{
+		width: 80%
+	}
+	
+	#sixth table{
+		width: 70%;
+		height: 40%;
+	}
+	
+	#okButton{
+		margin-left: 15%;
+	}
+	
+	#clearButton{
+		margin-left: 5%;
+	}
+	
+}
