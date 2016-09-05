@@ -1,1 +1,1 @@
-*part 1 of a design is ready
+*main part of a design is ready
