@@ -9,9 +9,6 @@
 	#mainPageDiv{
 		width: 710px;
 		height: 470px;
-	}
-
-	.container{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

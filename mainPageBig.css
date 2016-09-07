@@ -12,15 +12,11 @@
 
 	#mainPageDiv{
 		height: 100%;
-	}
-
-	.container{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-
 	.mainItem{
 		width: 40%;
 		height: 15%;
@@ -52,6 +48,7 @@
 		display: block;
 	}
 	#gameDiv{
+		display: none;
 		height: 100%;
 	}
 	.playingDiv{
