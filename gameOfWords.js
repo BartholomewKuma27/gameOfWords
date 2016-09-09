@@ -74,3 +74,57 @@ Board.prototype = {
 
 var b = new Board();
 b.dealCards();
+
+//
+var Listener = function (){
+	
+}
+
+Listener.prototype = {
+	startListening: function(){
+		this.cardClickListening();
+	},
+	
+	cardClickListening: function(){
+		var tmp = [];
+		var tableDatas = document.querySelectorAll(".cards");
+		for (var i = 0; i < tableDatas.length; i++){
+			var curTableData = tableDatas[i];
+			curTableData.onclick = function(e){
+				var curElem = e.target;
+				var curElemClass = curElem.className.split(" ")[0];
+				var letterIndex = curElemClass[curElemClass.length - 1];
+				var curLetterIndexes = sessionStorage.getItem("usedLetterIndexes");
+				if (curLetterIndexes != null && curLetterIndexes.indexOf(letterIndex) != -1){
+					return;
+				}
+				if (curLetterIndexes == null){
+					sessionStorage.setItem("usedLetterIndexes", letterIndex);
+				}
+				else{
+					curLetterIndexes = sessionStorage.getItem("usedLetterIndexes");
+					sessionStorage.setItem("usedLetterIndexes", curLetterIndexes + letterIndex);
+				}
+				var letterAndValue = document.getElementsByClassName(curElemClass);
+				var curLetter = letterAndValue[0].innerHTML;
+				var curValue = letterAndValue[1].innerHTML;
+				letterAndValue[0].style.display = "none";
+				letterAndValue[1].style.display = "none";
+				var letterIndex = sessionStorage.getItem("letterIndex");
+				if (letterIndex == null){
+					letterIndex = "0";
+					sessionStorage.setItem("letterIndex", "1");
+				}
+				else{
+					letterIndex = sessionStorage.getItem("letterIndex");
+					sessionStorage.setItem("letterIndex", parseInt(letterIndex) + 1);
+				}
+				var player1Table = document.getElementById("player1Score");
+				player1Table.rows[0].cells[letterIndex].innerHTML = curLetter;
+			}
+		}
+	}
+}
+
+var l = new Listener();
+l.startListening();

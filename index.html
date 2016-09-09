@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="mainPageBig.css">
 		<link rel="stylesheet" type="text/css" href="mainPageSmall.css">
 		<script src="words.js"></script>
+		<script src="helper.js"></script>
 	</head>
 	<body>
 		<div id="mainPageDiv">
@@ -12,7 +13,7 @@
 				<a id="offlineLink" href="#gameDiv">Offline</a>
 				<div id="difficulty">
 					<label for="difficulty"> Difficulty </label>
-					<input type="range" id="difficulty">
+					<input type="range" id="dif">
 				</div>
 			</div>
 			<div id="onlineDiv" class="mainItem">
@@ -31,38 +32,52 @@
 						<td></td>
 					</tr>
 				</table>
+				<div id="player2Cont" class="playerCont">
+				p2 score: <span id="player2Score"></span><br/>
+				p2 cur score: <span id="player2CurrentScore"></span><br/>
+				p2 word: <span id="player2Word"></span>
+				</div>
+			</div>
+			<div id="stats" class="playingDiv">
+				round: <span id="round"></span><br/>
+				timer: <span id="timer"></span>
 			</div>
 			<div id="second" class="playingDiv">
 				<table id="player3">
 					<tr>
-						<td> a</td>
-						<td> b</td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td> 1</td>
-						<td> 3</td>
+						<td></td>
+						<td></td>
 					</tr>
 				</table>
+				<div id="player3Cont" class="playerCont">
+				p3 score: <span id="player3Score"></span><br/>
+				p3 cur score: <span id="player3CurrentScore"></span><br/>
+				p3 word: <span id="player3Word" ></span>
+				</div>
 			</div>
 			<div id="third" class="playingDiv">
 				<table id="board">
 					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td class="card1 cards"></td>
+						<td class="card2 cards"></td>
+						<td class="card3 cards"></td>
+						<td class="card4 cards"></td>
+						<td class="card5 cards"></td>
+						<td class="card6 cards"></td>
+						<td class="card7 cards"></td>
 					</tr>
 					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td class="card1 cards"></td>
+						<td class="card2 cards"></td>
+						<td class="card3 cards"></td>
+						<td class="card4 cards"></td>
+						<td class="card5 cards"></td>
+						<td class="card6 cards"></td>
+						<td class="card7 cards"></td>
 					</tr>
 					
 				</table>
@@ -70,49 +85,62 @@
 			<div id="fourth" class="playingDiv">
 				<table id="player4">
 					<tr>
-						<td> a</td>
-						<td> b</td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td> 1</td>
-						<td> 3</td>
+						<td></td>
+						<td></td>
 					</tr>
 				</table>
+				<div id="player4Cont" class="playerCont">
+				p4 score: <span id="player4Score"></span><br/>
+				p4 cur score: <span id="player4CurrentScore"></span><br/>
+				p4 word: <span id="player4Word"></span>
+				</div>
 			</div>
 			<div id="fifth" class="playingDiv">
 				<table id="player1">
 					<tr>
-						<td></td>
-						<td></td>
+						<td class="card8 cards"></td>
+						<td class="card9 cards"></td>
 					</tr>
 					<tr>
-						<td></td>
-						<td></td>
+						<td class="card8 cards"></td>
+						<td class="card9 cards"></td>
 					</tr>
 				</table>
+				<div id="player1Cont" class="playerCont">
+				p1 score: <span id="player1Score"></span><br/>
+				pl cur score: <span id="player1CurrentScore"></span><br/>
+				pl word: <span id="player1Word"></span><br/>
+				</div>
 			</div>
 			<div id="sixth" class="playingDiv">
-				<table id="player1Score">
+				<table id="player1Cards">
 					<tr>
-						<td> c</td>
-						<td> b</td>
-						<td> a</td>
-						<td> b</td>
-						<td> a</td>
-						<td> b</td>
-						<td> b</td>
-						<td> a</td>
-						<td> b</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 				</table>
 				<button type="button" id="okButton">
 					OK
+				</button>
+				<button type="button" id="nextButton">
+					NEXT
 				</button>
 				<button type="button" id="clearButton">
 					CLEAR
 				</button>
 			</div>
 		</div>
-		<script src="gameOfWords.js"></script>
+		<script src="gameOfWordsRefactored.js"></script>
 	</body>
 </html>

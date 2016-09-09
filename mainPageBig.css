@@ -61,9 +61,11 @@
 	#first{
 		display:inline-block;
 		margin-left: 40%;
-		margin-right: 40%;
+		margin-right: 16%;
 	}
-
+	#stats{
+		display:inline-block;
+	}
 	#second{
 		display:inline-block;
 		margin-left: 0;
@@ -92,7 +94,7 @@
 	}
 	table{
 		width: 50%;
-		height: 80%;
+		height: 60%;
 		margin: 5px auto 5px auto;
 		border-collapse: seperate;
 		border-spacing: 5px 0;
@@ -107,7 +109,12 @@
 	
 	#sixth table{
 		width: 70%;
-		height: 40%;
+		height: 30%;
+	}
+	
+	p{
+		padding: 0;
+		margin: 0;
 	}
 	
 	#okButton{
@@ -118,4 +125,11 @@
 		margin-left: 5%;
 	}
 	
+	#nextButton{
+		margin-left: 5%;
+		display: none;
+	}
+	.playerCont{
+		border : 0;
+	}
 }
