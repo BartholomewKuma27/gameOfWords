@@ -36,6 +36,7 @@
 	}
 	
 	#gameDiv{
+		display: none;
 		width: 710px;
 	}
 	
