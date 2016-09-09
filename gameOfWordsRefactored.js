@@ -290,7 +290,7 @@ Listener.prototype = {
 	},
 	
 	offlineClick: function(){
-		document.getElementById("mainPageDiv").onclick = function(){
+		document.getElementById("offlineLink").onclick = function(){
 			var artist = new DaVinci();
 			document.getElementById("mainPageDiv").style.display = "none";
 			sessionStorage.setItem("mainPageDisplay", "none");
